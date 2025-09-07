@@ -322,7 +322,7 @@
                     aria-haspopup="true" aria-expanded="false">Páginas</a>
                   <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownPages">
                     <li>
-                      <a href="../index.html" class="dropdown-item item-anchor">Acerca de </a>
+                      <a href="sobrenosotros.html" class="dropdown-item item-anchor">Acerca de </a>
                     </li>
                     <li>
                       <a href="../index.html" class="dropdown-item item-anchor">Carrito </a>
@@ -331,13 +331,7 @@
                       <a href="../index.html" class="dropdown-item item-anchor">Pagar </a>
                     </li>
                     <li>
-                      <a href="../index.html" class="dropdown-item item-anchor">Próximamente </a>
-                    </li>
-                    <li>
-                      <a href="../index.html" class="dropdown-item item-anchor">Contacto </a>
-                    </li>
-                    <li>
-                      <a href="../index.html" class="dropdown-item item-anchor">Página de error </a>
+                      <a href="#contacto" class="dropdown-item item-anchor">Contacto </a>
                     </li>
                     <li>
                       <a href="../index.html" class="dropdown-item item-anchor">Preguntas frecuentes </a>
@@ -346,15 +340,12 @@
                       <a href="../index.html" class="dropdown-item item-anchor">Mi cuenta </a>
                     </li>
                     <li>
-                      <a href="../index.html" class="dropdown-item item-anchor">Seguimiento de pedido </a>
-                    </li>
-                    <li>
-                      <a href="../index.html" class="dropdown-item item-anchor">Lista de deseos </a>
+                      <a href="seguimiento.html" class="dropdown-item item-anchor">Seguimiento de pedido </a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contacto</a>
+                  <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="iniciarSesion.html">Iniciar sesión</a>
@@ -419,142 +410,156 @@
   <p>¿No tienes una cuenta? <a href="registrarse.html"><b>Regístrate aquí</b></a></p>
   </div>
 
-    <footer id="footer" class="mt-5">
+  <section class="newsletter bg-light" style="background: url(images/pattern-bg.png) no-repeat;">
     <div class="container">
-      <div class="row d-flex flex-wrap justify-content-between py-5">
-        <div class="col-md-3 col-sm-6">
-          <div class="footer-menu footer-menu-001">
-            <div class="footer-intro mb-4">
-              <a href="index.html">
-                <img src="../images/main-logo.png" alt="logo">
-              </a>
-            </div>
-            <p>Gravida massa volutpat aenean odio. Amet, turpis erat nullam fringilla elementum diam in. Nisi, purus
-              vitae, ultrices nunc. Sit ac sit suscipit hendrerit.</p>
-            <div class="social-links">
-              <ul class="list-unstyled d-flex flex-wrap gap-3">
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#youtube"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#pinterest"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8 py-5 my-5">
+          <div class="subscribe-header text-center pb-3">
+            <h3 class="section-title text-uppercase">Registrate en nuestras noticias</h3>
           </div>
+          <form id="form" class="d-flex flex-wrap gap-2">
+            <input type="text" name="email" placeholder="Tu dirección de correo electrónico" class="form-control form-control-lg">
+            <button class="btn btn-dark btn-lg text-uppercase w-100">Registrarse</button>
+          </form>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="footer-menu footer-menu-002">
-            <h5 class="widget-title text-uppercase mb-4">Enlaces rápidos</h5>
-            <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
-              <li class="menu-item">
-                <a href="index.html" class="item-anchor">Inicio</a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="mt-5">
+  <div class="container">
+    <div class="row d-flex flex-wrap justify-content-between py-5">
+      <div class="col-md-3 col-sm-6">
+        <div class="footer-menu footer-menu-001">
+          <div class="footer-intro mb-4">
+            <a href="../index.html">
+              <img src="../images/main-logo.png" alt="logo">
+            </a>
+          </div>
+          <p>Gravida massa volutpat aenean odio. Amet, turpis erat nullam fringilla elementum diam in. Nisi, purus
+            vitae, ultrices nunc. Sit ac sit suscipit hendrerit.</p>
+          <div class="social-links">
+            <ul class="list-unstyled d-flex flex-wrap gap-3">
+              <li>
+                <a href="#" class="text-secondary">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="menu-item">
-                <a href="index.html" class="item-anchor">Acerca de</a>
+              <li>
+                <a href="#" class="text-secondary">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="menu-item">
-                <a href="blog.html" class="item-anchor">Servicios</a>
+              <li>
+                <a href="#" class="text-secondary">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#youtube"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="menu-item">
-                <a href="styles.html" class="item-anchor">Artículo individual</a>
+              <li>
+                <a href="#" class="text-secondary">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#pinterest"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Contacto</a>
+              <li>
+                <a href="#" class="text-secondary">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#instagram"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="footer-menu footer-menu-003">
-            <h5 class="widget-title text-uppercase mb-4">Ayuda e información</h5>
-            <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Rastrea tu pedido</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Devoluciones + Cambios</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Envío + Entrega</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Contáctanos</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Encuéntranos fácilmente</a>
-              </li>
-              <li class="menu-item">
-                <a href="index.html" class="item-anchor">Preguntas frecuentes</a>
-              </li>
-            </ul>
-          </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="footer-menu footer-menu-002">
+          <h5 class="widget-title text-uppercase mb-4">Links rapidos</h5>
+          <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
+            <li class="menu-item">
+              <a href="../index.html" class="item-anchor">inicio</a>
+            </li>
+            <li class="menu-item">
+              <a href="sobrenosotros.html" class="item-anchor">acerca de</a>
+            </li>
+            <li class="menu-item">
+              <a href="blog.html" class="item-anchor">servicios</a>
+            </li>
+            <li class="menu-item">
+              <a href="styles.html" class="item-anchor">Artículo único</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="footer-menu footer-menu-004 border-animation-left">
-            <h5 class="widget-title text-uppercase mb-4">Contáctanos</h5>
-      <p>¿Tienes alguna pregunta o sugerencia? <a href="mailto:contact@yourcompany.com"
-        class="item-anchor">contact@yourcompany.com</a></p>
-      <p>¿Necesitas ayuda? Llámanos. <a href="tel:+43 720 11 52 78" class="item-anchor">+43 720 11 52
-        78</a>
-      </p>
-          </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="footer-menu footer-menu-003">
+          <h5 class="widget-title text-uppercase mb-4">Ayuda e Información</h5>
+          <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
+            <li class="menu-item">
+              <a href="seguimiento.html" class="item-anchor">Rastrear su pedido</a>
+            </li>
+            <li class="menu-item">
+              <a href="devolucionCambio.html" class="item-anchor">Devoluciones y Cambios</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="item-anchor">Envío y Entrega</a>
+            </li>
+            <li class="menu-item">
+              <a href="#contacto" class="item-anchor">Contáctenos</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="item-anchor">Encuéntranos</a>
+            </li>
+            <li class="menu-item">
+              <a href="../index.html" class="item-anchor">Preguntas Frecuentes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="contacto" class="col-md-3 col-sm-6">
+        <div class="footer-menu footer-menu-004 border-animation-left">
+          <h5 class="widget-title text-uppercase mb-4">Contáctenos</h5>
+          <p>¿Tienes alguna pregunta o sugerencia? <a href="mailto:contact@yourcompany.com"
+              class="item-anchor">contact@yourcompany.com</a></p>
+          <p>¿Necesitas ayuda? Llámanos. <a href="tel:+43 720 11 52 78" class="item-anchor">+43 720 11 52
+              78</a>
+          </p>
         </div>
       </div>
     </div>
-    <div class="border-top py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 d-flex flex-wrap">
-            <div class="shipping">
-              <span>Enviamos con:</span>
-              <img src="../images/arct-icon.png" alt="icon">
-              <img src="../images/dhl-logo.png" alt="icon">
-            </div>
-            <div class="payment-option">
-              <span>Opciones de pago:</span>
-              <img src="../images/visa-card.png" alt="card">
-              <img src="../images/paypal-card.png" alt="card">
-              <img src="../images/master-card.png" alt="card">
-            </div>
+  </div>
+  <div class="border-top py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex flex-wrap">
+          <div class="shipping">
+            <span>Enviamos con:</span>
+            <img src="../images/arct-icon.png" alt="icon">
+            <img src="../images/dhl-logo.png" alt="icon">
           </div>
-          <div class="col-md-6 text-end">
-            <p>© Copyright 2022 Kaira. Todos los derechos reservados. Diseño por <a href="https://templatesjungle.com"
-                target="_blank">TemplatesJungle</a> Distribución por <a href="https://themewagon.com"
-              target="blank">ThemeWagon</a></p>
+          <div class="payment-option">
+            <span>Opción de Pago:</span>
+            <img src="../images/visa-card.png" alt="card">
+            <img src="../images/paypal-card.png" alt="card">
+            <img src="../images/master-card.png" alt="card">
           </div>
+        </div>
+        <div class="col-md-6 text-end">
+          <p>© Copyright 2022 Kaira. All rights reserved. Design by <a href="https://templatesjungle.com"
+              target="_blank">TemplatesJungle</a> Distribution By <a href="https://themewagon.com"
+            target="blank">ThemeWagon</a></p>
         </div>
       </div>
     </div>
+  </div>
+</footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/plugins.js"></script>
   <script src="../js/SmoothScroll.js"></script>
@@ -563,5 +568,6 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="../js/script.min.js"></script>
+  <script src="../js/contacto.js"></script>
 </body>
 </html>
