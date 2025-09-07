@@ -1,4 +1,4 @@
-.iniciarSesion {
+.registro{
     background-color: #007bff34;
     color: black;
     border: 5px;
@@ -9,13 +9,14 @@
     border-radius: 10px;
     padding: 3px 30px;        /* Espaciado interno opcional */
 }
+
 .init{
     text-align: center;
 }
 
 .form-control{
     width: 90%;
-    margin-bottom: 15px; /* Espacio entre campos */
+    margin-bottom: 8px; /* Espacio entre campos */
     text-align: center;
     padding: 10px;
     border-radius: 5px;
@@ -23,7 +24,11 @@
     font-size: 16px;
 }
 
-.btn-iniciar{
+input {
+  color: #111 !important;
+}
+
+.btn-registro{
     background-color: #007bff;
     color: white;
     border: none;
