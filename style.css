@@ -96,12 +96,18 @@ h6.light,
   color: var(--light-color);
 }
 
-.footer-menu-001 img {
-  left: 150px;
-  width: 120px;
-  height: auto;
+.navbar-logo {
+  width: 120px;    
+  height: auto;    
   display: block;
-  margin: 0 auto;
+  margin:  auto;  
+}
+
+.footer-logo {
+  width: 120px;    
+  height: auto;    
+  display: block;
+  margin: 1 auto;
 }
 
 h1,
