@@ -1,0 +1,11 @@
+.iniciarSesion {
+    background-color: #007bff34;
+    color: black;
+    border: 5px;
+    text-align: center;
+    width: 400px;              /* Ajusta el ancho según prefieras */
+    margin: 50px auto;         /* Centra horizontalmente */
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 30px 20px;        /* Espaciado interno opcional */
+}
