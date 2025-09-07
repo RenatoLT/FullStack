@@ -237,12 +237,13 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-lg bg-light text-uppercase fs-6 p-3 border-bottom align-items-center">
+    <nav class="navbar navbar-expand-lg bg-light text-uppercase fs-6 p-3 border-bottom align-items-center">
     <div class="container-fluid">
       <div class="row justify-content-between align-items-center w-100">
 
         <div class="col-auto">
-          <a class="navbar-brand text-white" href="index.html">
+
+          <a class="navbar-brand text-white" href="../index.html">
             <img src="Imagenes/logo_o.png" alt="Logo" class="navbar-logo">
           </a>
         </div>
@@ -256,7 +257,7 @@
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             </div>
@@ -264,44 +265,46 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Inicio</a>
+                  <a class="nav-link" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Tienda</a>
+                  <a class="nav-link" href="../index.html">Tienda</a>
                 </li>
           
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdownPages" data-bs-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">Paginas</a>
+                    aria-haspopup="true" aria-expanded="false">Páginas</a>
                   <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownPages">
                     <li>
-                      <a href="index.html" class="dropdown-item item-anchor">Acerca de nosotros </a>
+                      <a href="pages/sobrenosotros.html" class="dropdown-item item-anchor">Acerca de </a>
                     </li>
                     <li>
-                      <a href="index.html" class="dropdown-item item-anchor">Carrito </a>
+                      <a href="../index.html" class="dropdown-item item-anchor">Carrito </a>
                     </li>
                     <li>
-                      <a href="index.html" class="dropdown-item item-anchor">Checkout </a>
+                      <a href="../index.html" class="dropdown-item item-anchor">Pagar </a>
                     </li>
                     <li>
-                      <a href="index.html" class="dropdown-item item-anchor">Próximamente </a>
+                      <a href="#contacto" class="dropdown-item item-anchor">Contacto </a>
+
                     </li>
                     <li>
-                      <a href="index.html" class="dropdown-item item-anchor">Página de Error </a>
+                      <a href="../index.html" class="dropdown-item item-anchor">Preguntas frecuentes </a>
                     </li>
                     <li>
-                      <a href="index.html" class="dropdown-item item-anchor">Preguntas Frecuentes </a>
+                      <a href="../index.html" class="dropdown-item item-anchor">Mi cuenta </a>
                     </li>
                     <li>
-                      <a href="index.html" class="dropdown-item item-anchor">Mi Cuenta </a>
-                    </li>
-                    <li>
-                      <a href="index.html" class="dropdown-item item-anchor">Seguimiento de Pedido </a>
+                      <a href="pages/seguimiento.html" class="dropdown-item item-anchor">Seguimiento de pedido </a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contacto</a>
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/iniciarSesion.html">Iniciar sesión</a>
+
                 </li>
               </ul>
             </div>
@@ -311,8 +314,12 @@
         <div class="col-3 col-lg-auto">
           <ul class="list-unstyled d-flex m-0">
             <li class="d-none d-lg-block">
+              <a href="index.html" class="text-uppercase mx-3">Lista de deseos <span class="wishlist-count">(0)</span>
+              </a>
+            </li>
+            <li class="d-none d-lg-block">
               <a href="index.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
-                aria-controls="offcanvasCart">Tu Carrito <span class="cart-count">(0)</span>
+                aria-controls="offcanvasCart">Carrito <span class="cart-count">(0)</span>
               </a>
             </li>
             <li class="d-lg-none">
@@ -339,9 +346,12 @@
             </li>
           </ul>
         </div>
+
       </div>
+
     </div>
   </nav>
+
 
   <section id="billboard" class="bg-light py-5">
     <div class="container">
@@ -746,13 +756,19 @@
             <h5 class="widget-title text-uppercase mb-4">Enlaces Rapidos</h5>
             <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
               <li class="menu-item">
-                <a href="index.html" class="item-anchor">Inicio</a>
+                <a href="index.html" class="item-anchor">inicio</a>
               </li>
               <li class="menu-item">
-                <a href="index.html" class="item-anchor">Acerca de</a>
+                <a href="pages/sobrenosotros.html" class="item-anchor">acerca de</a>
               </li>
               <li class="menu-item">
-                <a href="blog.html" class="item-anchor">Servicios</a>
+                <a href="blog.html" class="item-anchor">servicios</a>
+              </li>
+              <li class="menu-item">
+                <a href="styles.html" class="item-anchor">Artículo único</a>
+              </li>
+              <li class="menu-item">
+                <a href="#contacto" class="item-anchor">Contacto</a>
               </li>
             </ul>
           </div>
@@ -762,15 +778,19 @@
             <h5 class="widget-title text-uppercase mb-4">Ayuda e Información</h5>
             <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
               <li class="menu-item">
-                <a href="#" class="item-anchor">Rastrear su pedido</a>
+                <a href="pages/seguimiento.html" class="item-anchor">Rastrear su pedido</a>
               </li>
               <li class="menu-item">
-                <a href="#" class="item-anchor">Devoluciones y Cambios</a>
+                <a href="pages/devolucionCambio.html" class="item-anchor">Devoluciones y Cambios</a>
               </li>
               <li class="menu-item">
                 <a href="#" class="item-anchor">Envío y Entrega</a>
               </li>
               <li class="menu-item">
+                <a href="#contacto" class="item-anchor">Contáctenos</a>
+              </li>
+              <li class="menu-item">
+
                 <a href="#" class="item-anchor">Encuéntranos</a>
               </li>
               <li class="menu-item">
@@ -779,7 +799,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div id="contacto" class="col-md-3 col-sm-6">
           <div class="footer-menu footer-menu-004 border-animation-left">
             <h5 class="widget-title text-uppercase mb-4">Contáctenos</h5>
             <p>¿Tienes alguna pregunta o sugerencia? <a href="mailto:contact@hoseki.com"
@@ -822,6 +842,7 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/script.min.js"></script>
+  <script src="js/contacto.js"></script>
 </body>
 
 </html>
