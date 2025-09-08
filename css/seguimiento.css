@@ -12,11 +12,13 @@
     color: black;
     margin: 15px auto;
     height: 140px;
+
     width: 400px;         
     cursor: auto;
     line-height: 1;       
     border-radius: 8px;
     padding: 3px 35px;    
+
 }
 .btn-rastrear{
     background-color: #007bff;
@@ -30,6 +32,7 @@
 .form-control{
     width: 95%;
     margin-bottom: 8px; 
+
     text-align: center;
     padding: 10px;
     border-radius: 5px;

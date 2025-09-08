@@ -22,6 +22,12 @@ CSS STRUCTURE:
 2. GENERAL TYPOGRAPHY
 
 --------------------------------------------------------------*/
+
+.resaltar-contacto {
+  background-color: #f0f0f0 !important;
+  transition: background-color 0.5s;
+}
+
 body {
   --heading-font: "Marcellus", Roboto, sans-serif;
   --heading-font-weight: 400;
