@@ -22,7 +22,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Marcellus&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../css/devolucion.css">
+  <link rel="stylesheet" href="../css/carro.css">
 </head>
 
 <body class="homepage">
@@ -390,200 +390,241 @@
             </li>
           </ul>
         </div>
-
       </div>
-
     </div>
   </nav>
 
+  <div class="primero">
+    <h2>Carrito de compras</h2>
+  </div>
+  <p class="p11">1 producto en el carrito</p>
   <div class="principal">
-    <h1 class="titulo 1"><b>Política de Devolución y Cambio</b></h1>
-    <p>En nuestra tienda, nos comprometemos a ofrecer productos de alta calidad y garantizar la satisfacción de nuestros
-      clientes. Si por alguna razón no estás completamente satisfecho con tu compra, ofrecemos una política de devolución
-      y cambio clara y justa.</p>
-    <h2><b>Devoluciones</b></h2>
-    <p>Si deseas devolver un producto, por favor sigue estos pasos:</p>
-    <ol>
-      <li>Asegúrate de que el producto esté en su estado original, sin usar y con todas las etiquetas y empaques originales.</li>
-      <li>Contacta a nuestro servicio al cliente dentro de los 30 días posteriores a la recepción del producto.</li>
-      <li>Proporciona tu número de pedido y una descripción del motivo de la devolución.</li>
-      <li>Recibirás instrucciones sobre cómo devolver el producto.</li>
-    </ol>
-    <p>Una vez que recibamos el producto devuelto y verifiquemos su estado, procesaremos el reembolso a través del método
-      de pago original. Ten en cuenta que los gastos de envío no son reembolsables.</p>
-    <h2><b>Cambios</b></h2>
-    <p>Si deseas cambiar un producto por otro, sigue estos pasos:</p>
-    <ol>
-      <li>Asegúrate de que el producto esté en su estado original, sin usar y con todas las etiquetas y empaques originales.</li>
-      <li>Contacta a nuestro servicio al cliente dentro de los 30 días posteriores a la recepción del producto.</li>
-      <li>Proporciona tu número de pedido y una descripción del motivo del cambio.</li>
-      <li>Recibirás instrucciones sobre cómo devolver el producto y solicitar el nuevo artículo.</li>
-    </ol>
-    <p>Una vez que recibamos el producto devuelto y verifiquemos su estado, procesaremos el envío del nuevo artículo. Ten en
-      cuenta que los gastos de envío para el nuevo artículo correrán por cuenta del cliente.</p>
-    <h2><b>Excepciones</b></h2>
-    <p>No se aceptarán devoluciones o cambios en los siguientes casos:</p>
-    <ul>
-      <li>Productos personalizados o hechos a medida.</li>
-      <li>Productos en oferta o con descuento.</li>
-      <li>Productos que hayan sido usados, dañados o alterados.</li>
-    </ul>
+    <div class="primer-texto">
+        <img class="icono-envio" src="../Imagenes/fast-delivery-icon-free-vector.jpg" alt="">
+        <p>Envío gratis en todas tus compras superiores a $109.000</p>
+    </div>
+    <div class="secundario">
+        <table class="cart">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>envio</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="producto">
+                <img class="imagen-producto" src="../Imagenes/imagen_para_2.jpg" alt="">
+                <div class="info-producto">
+                    <p>collar de plata</p>
+                    <p>talla: S</p>
+                </div>
+            </td>
+            <td class="envio">Gratis</td>
+            <td class="precio">$25.900</td>
+            <td class="cantidad"><input type="number" min="1" max="10" value="1"></td>
+            <td class="total">$25.900</td>
+        </tr>
+        <tr>
+            <td colspan="5" class="continuar-comprando">
+                <button class="btn-continuar" onclick="location.href='../index.html'">Continuar comprando</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5" class="total-carrito">
+                <h3>Total del carrito: $25.900</h3>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+    <div class="segundo">
+        <p class="cupon-descuento">cupon de descuento</p>
+        <input class="input-cupon" type="text" placeholder="codigo">
+        <button class="btn-dcto">añadir</button>
+        <table class="finalcarro">
+            <tbody>
+              <tr>
+                <td>
+                  <div class="finalcarro-flex">
+                    <div class="tr-segundo">
+                      <div>Subtotal</div>
+                      <div>Gastos de envío</div>
+                      <div><b>Total</b></div>
+                    </div>
+                    <div class="tr-tercero">
+                      <div>$25.900</div>
+                      <div>Gratis</div>
+                      <div>$25.900</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+        <button class="btn-pago">proceder al pago</button>
+    </div>
+    </div>
+
   </div>
   
 
-  <section class="newsletter bg-light" style="background: url(images/pattern-bg.png) no-repeat;">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-8 py-5 my-5">
-          <div class="subscribe-header text-center pb-3">
-            <h3 class="section-title text-uppercase">Registrate en nuestras noticias</h3>
-          </div>
-          <form id="form" class="d-flex flex-wrap gap-2">
-            <input type="text" name="email" placeholder="Tu dirección de correo electrónico" class="form-control form-control-lg">
-            <button class="btn btn-dark btn-lg text-uppercase w-100">Registrarse</button>
-          </form>
+<section class="newsletter bg-light" style="background: url(../images/pattern-bg.png) no-repeat;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 py-5 my-5">
+        <div class="subscribe-header text-center pb-3">
+          <h3 class="section-title text-uppercase">Registrate en nuestras noticias</h3>
         </div>
+        <form id="form" class="d-flex flex-wrap gap-2">
+          <input type="text" name="email" placeholder="Tu dirección de correo electrónico" class="form-control form-control-lg">
+          <button class="btn btn-dark btn-lg text-uppercase w-100">Registrarse</button>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer id="footer" class="mt-5">
+<!-- Footer corregido -->
+<footer id="footer" class="mt-5">
+  <div class="container">
+    <div class="row d-flex flex-wrap justify-content-between py-5">
+      <div class="col-md-3 col-sm-6">
+        <div class="footer-menu footer-menu-001">
+          <div class="footer-intro mb-4">
+            <a href="../index.html">
+              <img src="../images/main-logo.png" alt="logo">
+            </a>
+          </div>
+          <p>Gravida massa volutpat aenean odio. Amet, turpis erat nullam fringilla elementum diam in. Nisi, purus
+            vitae, ultrices nunc. Sit ac sit suscipit hendrerit.</p>
+          <div class="social-links">
+            <ul class="list-unstyled d-flex flex-wrap gap-3">
+              <li>
+                <a href="#" class="text-secondary">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-secondary">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-secondary">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-secondary">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-secondary">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="footer-menu footer-menu-002">
+          <h5 class="widget-title text-uppercase mb-4">Links rapidos</h5>
+          <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
+            <li class="menu-item">
+              <a href="../index.html" class="item-anchor">inicio</a>
+            </li>
+            <li class="menu-item">
+              <a href="sobrenosotros.html" class="item-anchor">acerca de</a>
+            </li>
+            <li class="menu-item">
+              <a href="blog.html" class="item-anchor">servicios</a>
+            </li>
+            <li class="menu-item">
+              <a href="styles.html" class="item-anchor">Artículo único</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="footer-menu footer-menu-003">
+          <h5 class="widget-title text-uppercase mb-4">Ayuda e Información</h5>
+          <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
+            <li class="menu-item">
+              <a href="seguimiento.html" class="item-anchor">Rastrear su pedido</a>
+            </li>
+            <li class="menu-item">
+              <a href="devolucionCambio.html" class="item-anchor">Devoluciones y Cambios</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="item-anchor">Envío y Entrega</a>
+            </li>
+            <li class="menu-item">
+              <a href="#contacto" class="item-anchor">Contáctenos</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="item-anchor">Encuéntranos</a>
+            </li>
+            <li class="menu-item">
+              <a href="../index.html" class="item-anchor">Preguntas Frecuentes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="contacto" class="col-md-3 col-sm-6">
+        <div class="footer-menu footer-menu-004 border-animation-left">
+          <h5 class="widget-title text-uppercase mb-4">Contáctenos</h5>
+          <p>¿Tienes alguna pregunta o sugerencia? <a href="mailto:contact@yourcompany.com"
+              class="item-anchor">contact@yourcompany.com</a></p>
+          <p>¿Necesitas ayuda? Llámanos. <a href="tel:+43 720 11 52 78" class="item-anchor">+43 720 11 52
+              78</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top py-4">
     <div class="container">
-      <div class="row d-flex flex-wrap justify-content-between py-5">
-        <div class="col-md-3 col-sm-6">
-          <div class="footer-menu footer-menu-001">
-            <div class="footer-intro mb-4">
-              <a href="../index.html">
-                <img src="../images/main-logo.png" alt="logo">
-              </a>
-            </div>
-            <p>Gravida massa volutpat aenean odio. Amet, turpis erat nullam fringilla elementum diam in. Nisi, purus
-              vitae, ultrices nunc. Sit ac sit suscipit hendrerit.</p>
-            <div class="social-links">
-              <ul class="list-unstyled d-flex flex-wrap gap-3">
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#youtube"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#pinterest"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <use xlink:href="#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+      <div class="row">
+        <div class="col-md-6 d-flex flex-wrap">
+          <div class="shipping">
+            <span>Enviamos con:</span>
+            <img src="../images/arct-icon.png" alt="icon">
+            <img src="../images/dhl-logo.png" alt="icon">
+          </div>
+          <div class="payment-option">
+            <span>Opción de Pago:</span>
+            <img src="../images/visa-card.png" alt="card">
+            <img src="../images/paypal-card.png" alt="card">
+            <img src="../images/master-card.png" alt="card">
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="footer-menu footer-menu-002">
-            <h5 class="widget-title text-uppercase mb-4">Links rapidos</h5>
-            <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
-              <li class="menu-item">
-                <a href="../index.html" class="item-anchor">inicio</a>
-              </li>
-              <li class="menu-item">
-                <a href="sobrenosotros.html" class="item-anchor">acerca de</a>
-              </li>
-              <li class="menu-item">
-                <a href="blog.html" class="item-anchor">servicios</a>
-              </li>
-              <li class="menu-item">
-                <a href="styles.html" class="item-anchor">Artículo único</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="footer-menu footer-menu-003">
-            <h5 class="widget-title text-uppercase mb-4">Ayuda e Información</h5>
-            <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
-              <li class="menu-item">
-                <a href="seguimiento.html" class="item-anchor">Rastrear su pedido</a>
-              </li>
-              <li class="menu-item">
-                <a href="devolucionCambio.html" class="item-anchor">Devoluciones y Cambios</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Envío y Entrega</a>
-              </li>
-              <li class="menu-item">
-                <a href="#contacto" class="item-anchor">Contáctenos</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="item-anchor">Encuéntranos</a>
-              </li>
-              <li class="menu-item">
-                <a href="../index.html" class="item-anchor">Preguntas Frecuentes</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div id="contacto" class="col-md-3 col-sm-6">
-          <div class="footer-menu footer-menu-004 border-animation-left">
-            <h5 class="widget-title text-uppercase mb-4">Contáctenos</h5>
-            <p>¿Tienes alguna pregunta o sugerencia? <a href="mailto:contact@yourcompany.com"
-                class="item-anchor">contact@yourcompany.com</a></p>
-            <p>¿Necesitas ayuda? Llámanos. <a href="tel:+43 720 11 52 78" class="item-anchor">+43 720 11 52
-                78</a>
-            </p>
-          </div>
+        <div class="col-md-6 text-end">
+          <p>© Copyright 2022 Kaira. All rights reserved. Design by <a href="https://templatesjungle.com"
+              target="_blank">TemplatesJungle</a> Distribution By <a href="https://themewagon.com"
+            target="blank">ThemeWagon</a></p>
         </div>
       </div>
     </div>
-    <div class="border-top py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 d-flex flex-wrap">
-            <div class="shipping">
-              <span>Enviamos con:</span>
-              <img src="../images/arct-icon.png" alt="icon">
-              <img src="../images/dhl-logo.png" alt="icon">
-            </div>
-            <div class="payment-option">
-              <span>Opción de Pago:</span>
-              <img src="../images/visa-card.png" alt="card">
-              <img src="../images/paypal-card.png" alt="card">
-              <img src="../images/master-card.png" alt="card">
-            </div>
-          </div>
-          <div class="col-md-6 text-end">
-            <p>© Copyright 2022 Kaira. All rights reserved. Design by <a href="https://templatesjungle.com"
-                target="_blank">TemplatesJungle</a> Distribution By <a href="https://themewagon.com"
-              target="blank">ThemeWagon</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  </div>
+</footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="../js/SmoothScroll.js"></script>
+  <script src="../js/SmoothScroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
